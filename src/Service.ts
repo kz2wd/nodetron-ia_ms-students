@@ -16,10 +16,10 @@ export default class GameDataService extends Service {
     super(broker)
     this.parseServiceSchema({
       name: Config.name,
-      dependencies: ['game-data'],
+      dependencies: ['data'],
       actions: strategiesSet,
       events: {
-        'game-data.state'(ctx: Context<Data>): void {
+        'data.state'(ctx: Context<Data>): void {
           state.data = ctx.params
           manager.update(broker)
           state.assign.computeAll(broker)

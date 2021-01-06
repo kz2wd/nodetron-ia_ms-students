@@ -29,21 +29,21 @@ export default class Triangle extends Strategies {
   }
 
   compute(broker: ServiceBroker): boolean {
-    void broker.call('bots-control.moveTo', {
+    void broker.call('control.moveTo', {
       id: this.ids[0],
       target: { x: 0, y: 0 },
       orientation: -3.14,
       expectedReachTime: 10,
     } as MoveToPacket)
 
-    void broker.call('bots-control.moveTo', {
+    void broker.call('control.moveTo', {
       id: this.ids[1],
       target: { x: -0.75, y: 0.75 },
       orientation: -3.14,
       expectedReachTime: 10,
     } as MoveToPacket)
 
-    void broker.call('bots-control.moveTo', {
+    void broker.call('control.moveTo', {
       id: this.ids[2],
       target: { x: -0.75, y: -0.75 },
       orientation: -3.14,
