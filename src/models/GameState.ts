@@ -1,8 +1,8 @@
 // eslint-disable-next-line max-classes-per-file
-import { Data } from '@ssl/types/internal/data'
+import { Data } from '@nodetron/types/internal/data'
 import { ServiceBroker } from 'moleculer'
-import { TaskManager } from '@ssl/types/internal/task-manager/task'
-import Strategies from '@ssl/types/internal/task-manager/tasks/strategies'
+import { TaskManager } from '@nodetron/types/internal/task-manager/task'
+import Strategies from '@nodetron/types/internal/task-manager/tasks/strategies'
 
 export class StrategieManager implements TaskManager<Strategies> {
   private strategies = new Map<number, Strategies>()

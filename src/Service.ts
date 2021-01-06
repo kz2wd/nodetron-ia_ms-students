@@ -4,7 +4,7 @@ import {
   Service,
   ServiceBroker,
 } from 'moleculer'
-import { Data } from '@ssl/types/internal/data'
+import { Data } from '@nodetron/types/internal/data'
 
 import strategiesSet from './controllers/strategies/index'
 import Config from './Config'

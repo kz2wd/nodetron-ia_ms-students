@@ -1,6 +1,6 @@
 import { ActionSchema, Context, ServiceBroker } from 'moleculer'
-import { MoveToPacket } from '@ssl/types/internal/control/packet'
-import Strategies from '@ssl/types/internal/task-manager/tasks/strategies'
+import { MoveToPacket } from '@nodetron/types/internal/control/packet'
+import Strategies from '@nodetron/types/internal/task-manager/tasks/strategies'
 
 import { state } from '../../models/GameState'
 

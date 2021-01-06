@@ -1,6 +1,6 @@
 import { ActionSchema, Context, ServiceBroker } from 'moleculer'
-import { MoveToPacket } from '@ssl/types/internal/control/packet'
-import Strategies from '@ssl/types/internal/task-manager/tasks/strategies'
+import { MoveToPacket } from '@nodetron/types/internal/control/packet'
+import Strategies from '@nodetron/types/internal/task-manager/tasks/strategies'
 
 import { state } from '../../models/GameState'
 
@@ -33,21 +33,18 @@ export default class Triangle extends Strategies {
       id: this.ids[0],
       target: { x: 0, y: 0 },
       orientation: -3.14,
-      expectedReachTime: 10,
     } as MoveToPacket)
 
     void broker.call('control.moveTo', {
       id: this.ids[1],
       target: { x: -0.75, y: 0.75 },
       orientation: -3.14,
-      expectedReachTime: 10,
     } as MoveToPacket)
 
     void broker.call('control.moveTo', {
       id: this.ids[2],
       target: { x: -0.75, y: -0.75 },
       orientation: -3.14,
-      expectedReachTime: 10,
     } as MoveToPacket)
 
     return true

@@ -1,5 +1,5 @@
 import { ServiceBroker } from 'moleculer'
-import { Command as GameControllerCommand } from '@ssl/types/league/game-controller'
+import { Command as GameControllerCommand } from '@nodetron/types/league/game-controller'
 
 import { state } from '../models/GameState'
 
