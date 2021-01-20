@@ -4,7 +4,8 @@ import {
   Service,
   ServiceBroker,
 } from 'moleculer'
-import { Data } from '@nodetron/types/internal/data'
+import { Data } from '@nodetron/util/data'
+import { DataMessage } from '@nodetron/types/data'
 
 import strategiesSet from './controllers/strategies/index'
 import Config from './Config'
@@ -19,8 +20,8 @@ export default class GameDataService extends Service {
       dependencies: ['data'],
       actions: strategiesSet,
       events: {
-        'data.state'(ctx: Context<Data>): void {
-          state.data = ctx.params
+        'data.state'(ctx: Context<DataMessage>): void {
+          state.data = new Data(ctx.params)
           manager.update(broker)
           state.assign.computeAll(broker)
         },

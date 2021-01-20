@@ -36,8 +36,8 @@ export abstract class GameStateMachine {
   currentStateMethod: stateMethods | undefined
 
   update(broker: ServiceBroker): void {
-    if (state.data.gameController.command) {
-      switch (state.data.gameController.command.value) {
+    if (state.gameController.command) {
+      switch (state.gameController.command.value) {
         case GameControllerCommand.STOP:
           this.currentStateMethod = this.statesMethods.onStopped
           broker.logger.debug('Stopping...')
