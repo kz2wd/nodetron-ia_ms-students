@@ -3,7 +3,7 @@ import { Data } from '@nodetron/util/data'
 import { ServiceBroker } from 'moleculer'
 import { TaskManager } from '@nodetron/types/task-manager/task'
 import Strategies from '@nodetron/types/task-manager/tasks/strategies'
-import { Color } from '@nodetron/types/utils/utils'
+import { Color } from '@nodetron/types/data/enum'
 import { DataMessage } from '@nodetron/types/data'
 import { GameControllerEvent } from '@nodetron/types/league/game-controller'
 
