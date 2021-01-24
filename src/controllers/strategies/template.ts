@@ -1,6 +1,6 @@
 import { ActionSchema, Context, ServiceBroker } from 'moleculer'
-import { MoveToPacket } from '@nodetron/types/internal/control/packet'
-import Strategies from '@nodetron/types/internal/task-manager/tasks/strategies'
+import { MoveToMessage } from '@nodetron/types/control/moveTo'
+import Strategies from '@nodetron/types/task-manager/tasks/strategies'
 
 import { state } from '../../models/GameState'
 
@@ -29,8 +29,7 @@ export default class Template extends Strategies {
       id: this.id,
       target: { x: 0, y: 0 },
       orientation: 0,
-      expectedReachTime: 1,
-    } as MoveToPacket)
+    } as MoveToMessage)
 
     return false
   }
