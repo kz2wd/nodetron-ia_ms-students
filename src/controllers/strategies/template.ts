@@ -23,7 +23,7 @@ export default class Template extends Strategies {
   }
 
   compute(broker: ServiceBroker): boolean {
-    broker.logger.debug(state.data.ball)
+    broker.logger.debug(state.world.ball)
 
     void broker.call('control.moveTo', {
       id: this.id,

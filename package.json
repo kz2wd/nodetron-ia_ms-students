@@ -22,8 +22,8 @@
     "eslint-plugin-security": "^1.4.0"
   },
   "dependencies": {
-    "@nodetron/types": "^0.0.1-beta.17",
-    "@nodetron/util": "^0.0.1-beta.6",
+    "@nodetron/types": "^0.0.1-beta.19",
+    "@nodetron/util": "^0.0.1-beta.7",
     "@types/node": "^14.14.22",
     "dotenv": "^8.2.0",
     "env-var": "^7.0.0",
