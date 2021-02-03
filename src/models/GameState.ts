@@ -5,7 +5,7 @@ import Strategies from '@nodetron/types/task-manager/tasks/strategies'
 import { Color } from '@nodetron/types/enum'
 import { World } from '@nodetron/util/world'
 import { WorldMessage } from '@nodetron/types/world'
-import { GameControllerEvent } from '@nodetron/types/league/game-controller'
+import { GameControllerEvent } from '@nodetron/types/network/game-controller'
 
 export class StrategieManager implements TaskManager<Strategies> {
   private strategies = new Map<number, Strategies>()
