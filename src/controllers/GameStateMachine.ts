@@ -3,6 +3,8 @@ import { Command as GameControllerCommand } from '@nodetron/types/network/game-c
 
 import { state } from '../models/state'
 
+import { Manager } from './manager'
+
 type stateMethods = (broker: ServiceBroker) => void;
 
 export interface GameStateMachineStatesMethods {
@@ -30,7 +32,7 @@ export interface GameStateMachineStatesMethods {
   onBallPlacementBlue: stateMethods,
 }
 
-export abstract class GameStateMachine {
+export abstract class GameStateMachine implements Manager {
   public abstract statesMethods: GameStateMachineStatesMethods
 
   currentStateMethod: stateMethods | undefined

@@ -23,7 +23,6 @@ export default class GameDataService extends Service {
         'world.state'(ctx: Context<WorldMessage>): void {
           state.world = new World(ctx.params)
           manager.update(broker)
-          state.assign.computeAll(broker)
         },
       },
     })

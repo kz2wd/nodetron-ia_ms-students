@@ -1,4 +1,3 @@
-// eslint-disable-next-line max-classes-per-file
 import { ServiceBroker } from 'moleculer'
 import { TaskManager } from '@nodetron/types/task-manager/task'
 import Strategies from '@nodetron/types/task-manager/tasks/strategies'

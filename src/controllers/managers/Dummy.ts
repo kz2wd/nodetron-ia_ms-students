@@ -1,4 +1,5 @@
 import { ServiceBroker } from 'moleculer'
+
 import { GameStateMachine, GameStateMachineStatesMethods } from '../GameStateMachine'
 
 export default class DummyManager extends GameStateMachine {
