@@ -2,7 +2,7 @@ import { ActionSchema, Context, ServiceBroker } from 'moleculer'
 import { MoveToMessage } from '@nodetron/types/control/moveTo'
 import Strategies from '@nodetron/types/task-manager/tasks/strategies'
 
-import { state } from '../../models/GameState'
+import { state } from '../../models/state'
 
 export default class Template extends Strategies {
   name = 'template';

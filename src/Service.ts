@@ -10,7 +10,7 @@ import { WorldMessage } from '@nodetron/types/world'
 import strategiesSet from './controllers/strategies/index'
 import Config from './Config'
 import manager from './controllers/managers'
-import { state } from './models/GameState'
+import { state } from './models/state'
 
 export default class GameDataService extends Service {
   public constructor(public broker: ServiceBroker) {

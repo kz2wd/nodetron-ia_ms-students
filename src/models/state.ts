@@ -22,6 +22,7 @@ export class StrategieManager implements TaskManager<Strategies> {
     })
   }
 }
+
 const initialData: WorldMessage = {
   field: {
     width: 6,

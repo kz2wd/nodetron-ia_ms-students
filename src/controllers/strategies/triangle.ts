@@ -2,7 +2,7 @@ import { ActionSchema, Context, ServiceBroker } from 'moleculer'
 import { MoveToMessage } from '@nodetron/types/control/moveTo'
 import Strategies from '@nodetron/types/task-manager/tasks/strategies'
 
-import { state } from '../../models/GameState'
+import { state } from '../../models/state'
 
 /**
  * This class is an example of the new way to create Strategies.

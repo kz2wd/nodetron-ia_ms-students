@@ -1,7 +1,7 @@
 import { ServiceBroker } from 'moleculer'
 import { Command as GameControllerCommand } from '@nodetron/types/network/game-controller'
 
-import { state } from '../models/GameState'
+import { state } from '../models/state'
 
 type stateMethods = (broker: ServiceBroker) => void;
 
