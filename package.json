@@ -23,9 +23,9 @@
   },
   "dependencies": {
     "@nodetron/math": "^0.0.1-beta.7",
-    "@nodetron/types": "^0.0.1-beta.20",
-    "@nodetron/util": "^0.0.1-beta.7",
-    "@types/node": "^14.14.22",
+    "@nodetron/types": "^0.0.1-beta.21",
+    "@nodetron/util": "^0.0.1-beta.8",
+    "@types/node": "^14.14.25",
     "dotenv": "^8.2.0",
     "env-var": "^7.0.0",
     "moleculer": "0.14.12",
